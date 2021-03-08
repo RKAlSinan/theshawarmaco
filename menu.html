@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Order Online</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+    font-family: "Lato", sans-serif
+  }
+
+  .mySlides {
+    display: none
+  }
+</style>
+
+<body>
+
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">SHAWARMA CO.</a>
+      <a href="menu.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ORDER ONLINE</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+
+      </div>
+      <a href="paymentform.html" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+          class="fa fa-shopping-cart"></i></a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="menu.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ORDER ONLINE</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="paymentform.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CART</a>
+  </div>
+
+
+  <!-- Online Order Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+  <!--Delivery Order Section-->
+      <h2 class="w3-wide w3-center">DELIVERY OPTIONS</h2>
+      <p class="w3-opacity w3-center"><i>We deliver through delivery applications!</i></p><br>
+      <div class="w3-row w3-padding-32 w3-center">
+        <div class="w3-quarter w3-hover-opacity">
+          <a href="https://hungerstation.com/sa-en"><img src="hungerstation.png"
+              class="w3-round w3-margin-bottom w3-round-xlarge" alt="Random Name" style="width:40%"></a>
+        </div>
+        <div class="w3-quarter w3-hover-opacity">
+          <a href="https://apps.apple.com/tr/app/murta7-%D9%85%D8%B1%D8%AA%D8%A7%D8%AD/id1457374102"><img
+              src="murta7.png" class="w3-round w3-margin-bottom w3-round-xlarge" alt="Random Name"
+              style="width:40%"></a>
+        </div>
+        <div class="w3-quarter w3-hover-opacity">
+          <a href="https://shukah.com/menu-the-shawarma-co"><img src="shukah.png"
+              class="w3-round w3-margin-bottom w3-round-xlarge" alt="Random Name" style="width:40%"></a>
+        </div>
+        <div class="w3-quarter w3-hover-opacity">
+          <a href="https://www.maeda.com.sa/"><img src="maeda.png" class="w3-round w3-round-xlarge" alt="Random Name"
+              style="width:40%"></a>
+        </div>
+      </div>
+
+<!--TakeOut Order Section-->
+      <h2 class="w3-wide w3-center">TAKE-OUT ORDER</h2>
+      <p class="w3-opacity w3-center"><i>Order online and come pick it up yourself! 😉</i></p><br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="menu1.png" alt="Signature Fries Chicken" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Signature Fries Chicken</b></p>
+            <p class="w3-opacity ">17 SR</p>
+            <p>Shawrma, fries, cheese, jalapeno and sauce.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="menu2.png" alt="Beef Rocka" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Beef Rocka</b></p>
+            <p class="w3-opacity">9 SR</p>
+            <p>Shawarma in bread with rocca and pomegranate.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="menu3.png" alt="Chicken Rocka" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Chicken Rocka</b></p>
+            <p class="w3-opacity">7 SR</p>
+            <p>Shawarma in bread with rocca and pomegranate.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+          <img src="menu4.png" alt="Chicken Company" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Chicken company</b></p>
+            <p class="w3-opacity">30 SR</p>
+            <p>Shawarma and rice with toppings and sauces.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="menu5.png" alt="Beef Company" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Beef Company</b></p>
+            <p class="w3-opacity">30 SR</p>
+            <p>Shawarma and rice with toppings and sauces.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="menu6.png" alt="Chicken Classic" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Chicken Classic</b></p>
+            <p class="w3-opacity">7 SR</p>
+            <p>Shawarma in lebanese bread with toppings.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+          <img src="menu7.png" alt="Chicken Bita" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Chicken Pita</b></p>
+            <p class="w3-opacity">13 SR</p>
+            <p>Chicken in lebanese bread with toppings.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="menu8.png" alt="Fries" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Fries</b></p>
+            <p class="w3-opacity">9 SR</p>
+            <p>Enjoy your fries with our special cheese sauce.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+          <img src="menu10.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Sauces Combo</b></p>
+            <p class="w3-opacity">8 SR</p>
+            <p>Our combination of sauces for all meals.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="menu11.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Lunch Dish</b></p>
+            <p class="w3-opacity">26 SR</p>
+            <p>Rice, shawarma, veggies, pomegranate and sauces.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="menu12.png" alt="Company Chicken" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Chicken Arabi</b></p>
+            <p class="w3-opacity">30 SR</p>
+            <p>Tortilla shawarma dish with fries and sauces.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="logo.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Orange Juice</b></p>
+            <p class="w3-opacity">7 SR</p>
+            <p>Healthy fresh-squeezed orange juice.</p>
+            
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Add to Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.instagram.com/theshawarmaco/"><i class="fa fa-instagram w3-hover-opacity"></i></a><br>
+  <i style="font-size:24px" class="fa w3-hover-opacity" alt="0535667756">&#xf095;<b> 0535667756</b></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+
+</html>
